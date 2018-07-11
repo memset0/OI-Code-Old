@@ -27,20 +27,11 @@ struct Node {
 	int l, r, mid;
 	ll ans, mul, sum;
 } p[maxn << 3];
-void print() {
-//	printf("val[] = ");
-//	for (int i = 1; i <= n; i++)
-//		printf("%d ", query(1, i, i));
-//	puts("");
-	for (int i = 1; i <= (n << 3); i++)
-		if (p[i].mid)
-			printf("p[%d]=%d-%d %lld %lld %lld\n", i, p[i].l, p[i].r, p[i].ans, p[i].mul, p[i].sum);
-}
 void pushup(int u, ll mul, ll sum) {
 //	cout << "[" << u << " " << mul << " " << sum << " " << p[u].ans << " " << p[u].mul << " " << p[u].sum << "]";
 	p[u].ans = ((p[u].ans * mul) % Mod + sum * (p[u].r - p[u].l + 1)) % Mod;
 	p[u].mul = (p[u].mul * mul) % Mod;
-	p[u].sum = ((p[u].sum * mul) % Mod + sum) % Mod;
+	p[u].sum = ((p[u].sum * mul) % Mod + sum * (p[u].r - p[u].l + 1)) % Mod;
 //	cout << "[" << u << " " << mul << " " << sum << " " << p[u].ans << " " << p[u].mul << " " << p[u].sum << "]\n";
 }
 void pushdown(int u) {
@@ -48,7 +39,6 @@ void pushdown(int u) {
 		pushup(u << 1, p[u].mul, p[u].sum);
 		pushup(u << 1 | 1, p[u].mul, p[u].sum);
 		p[u].mul = 1, p[u].sum = 0;
-//		print();
 	}
 }
 void build(int u, int l, int r) {
@@ -82,6 +72,15 @@ ll query(int u, int l, int r) {
 	if (r <= p[u].mid) return query(u << 1, l, r);
 	else if (l > p[u].mid) return query(u << 1 | 1, l, r);
 	else return (query(u << 1, l, p[u].mid) + query(u << 1 | 1, p[u].mid + 1, r)) % Mod;
+}
+void print() {
+//	printf("val[] = ");
+//	for (int i = 1; i <= n; i++)
+//		printf("%d ", query(1, i, i));
+//	puts("");
+	for (int i = 1; i <= (n << 3); i++)
+		if (p[i].mid)
+			printf("p[%d]=%d-%d %lld %lld %lld\n", i, p[i].l, p[i].r, p[i].ans, p[i].mul, p[i].sum);
 }
 int main() {
 //	freopen("INPUT", "r", stdin);
