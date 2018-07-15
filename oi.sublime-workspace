@@ -1,0 +1,750 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"main",
+				"main\t[main]"
+			],
+			[
+				"paddin",
+				"padding-left\tproperty"
+			],
+			[
+				"theme-comm",
+				"theme-comments"
+			],
+			[
+				"theme-",
+				"theme-comment-avatar-"
+			],
+			[
+				"border-bottom",
+				"border-bottom-color\tproperty"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"theme-comme",
+				"theme-comments-input"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"scr",
+				"scrollPercent"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"bakc",
+				"background-color"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"n",
+				"n"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "洛谷/3376 【模板】网络最大流.cpp",
+			"settings":
+			{
+				"buffer_size": 1807,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++ Single File.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/G++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/G++.sublime-build",
+					"Compile"
+				],
+				[
+					"Packages/User/G++.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/G++.sublime-build",
+					"Compile & Run"
+				]
+			],
+			[
+				"Packages/User/G++.sublime-build",
+				"Compile & Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/G++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/G++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/G++.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/G++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/G++.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/G++.sublime-build",
+					"RunInCmd"
+				]
+			],
+			[
+				"Packages/User/G++.sublime-build",
+				"RunInCmd"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/G++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/G++.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/User/G++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/G++.sublime-build",
+				"Test"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/my-G++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/my-G++.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/my-G++.sublime-build",
+					"RunInCmd"
+				]
+			],
+			[
+				"Packages/User/my-G++.sublime-build",
+				"RunInCmd"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 283.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"m",
+				"Material Theme: Extras"
+			],
+			[
+				"material ",
+				"Material Theme: Configuration"
+			],
+			[
+				"sublim",
+				"SublimeLinter: Goto Error"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"subl",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"pcrp",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublime ",
+				"Preferences: SublimeLint Settings – Default"
+			],
+			[
+				"pcremov",
+				"Package Control: Remove Package"
+			],
+			[
+				"package c i",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"cpi",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: std::map"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"themee",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 860.0
+	},
+	"console":
+	{
+		"height": 572.0,
+		"history":
+		[
+			"123456789123456789+123456879123456789",
+			"ls",
+			"exit",
+			"print(1)",
+			"5",
+			"4",
+			"2",
+			"1",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/surface/Desktop/OI",
+		"/C/Users/surface/Desktop/OI/CodeForces",
+		"/C/Users/surface/Desktop/OI/CodeForces/Codeforces Round #486 (Div. 3)",
+		"/C/Users/surface/Desktop/OI/洛谷"
+	],
+	"file_history":
+	[
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/sublimelint/SublimeLint.sublime-settings",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLint.sublime-settings",
+		"/C/Users/surface/Desktop/OI/CodeForces/README.md",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/G++.sublime-build",
+		"/C/Users/surface/Desktop/OI/洛谷/3376 【模板】网络最大流.cpp",
+		"/C/Users/surface/Desktop/OI/private/a+b.cpp",
+		"/C/Users/surface/Desktop/OI/LOJ/7 Input Test.cpp",
+		"/C/Users/surface/Desktop/OI/洛谷/3376 【模板】网络最大流(1).cpp",
+		"/C/Users/surface/Desktop/OI/洛谷/test.cpp",
+		"/C/Users/surface/Desktop/OneDrive/算法/网络流讲稿/SAP_STD.cpp",
+		"/C/Users/surface/Desktop/OI/洛谷/3376 【模板】网络最大流(0).cpp",
+		"/C/Users/surface/Desktop/OI/洛谷/INPUT",
+		"/C/Users/surface/Desktop/OI/LJOJ/3860 Babystep.cpp",
+		"/C/Users/surface/Desktop/OI/LJOJ/3860 Babystep/mine.cpp",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/__fast read.sublime-snippet",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/__freopen.sublime-snippet",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/__main.sublime-snippet",
+		"/C/Users/surface/Desktop/OI/LJOJ/3860 Babystep/check.bat",
+		"/C/Users/surface/Desktop/OI/LJOJ/3860 Babystep/data.cpp",
+		"/C/Users/surface/Desktop/OI/LJOJ/3858 心灵终结.cpp",
+		"/C/Users/surface/Desktop/OI/LJOJ/3860 Babystep/std.cpp",
+		"/C/Users/surface/Desktop/OI/LJOJ/INPUT",
+		"/C/Users/surface/Desktop/OI/LJOJ/testdata.in",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/cppread.sublime-snippet",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/oi.sublime-snippet",
+		"/C/Users/surface/Desktop/新建文件夹 (4)/1.bat",
+		"/C/Users/surface/Desktop/新建文件夹 (4)/test.bat",
+		"/C/Users/surface/Desktop/OI/private/temp.cpp",
+		"/C/Users/surface/Desktop/OneDrive/项目/OI代码/temp.cpp",
+		"/C/xampp/htdocs/usr/themes/ringo/temp.php",
+		"/C/xampp/htdocs/usr/themes/ringo/post.php",
+		"/C/xampp/htdocs/usr/themes/ringo/header.php",
+		"/C/xampp/htdocs/usr/themes/ringo/footer.php",
+		"/C/xampp/htdocs/usr/themes/ringo/comments_backup.php",
+		"/C/xampp/htdocs/usr/themes/ringo/comments.php",
+		"/C/xampp/htdocs/usr/themes/ringo/src/comment.css",
+		"/C/xampp/htdocs/usr/themes/ringo/src/style.css",
+		"/C/xampp/htdocs/usr/themes/ringo/README.md",
+		"/C/xampp/htdocs/usr/themes/ringo/index.php",
+		"/C/xampp/htdocs/usr/themes/ringo/functions.php",
+		"/C/xampp/htdocs/usr/themes/ringo/sidebar.php",
+		"/C/xampp/htdocs/usr/themes/ringo/demo/post.html",
+		"/C/xampp/htdocs/usr/themes/ringo/src/directory.js",
+		"/C/xampp/htdocs/usr/themes/ringo/demo/directory.js",
+		"/C/xampp/htdocs/usr/themes/ringo/style.css",
+		"/C/xampp/htdocs/usr/themes/ringo/demo/style.css",
+		"/C/xampp/htdocs/usr/themes/Next/footer.php",
+		"/C/xampp/htdocs/usr/themes/Next/style.css",
+		"/C/xampp/htdocs/usr/themes/Next/post.php",
+		"/C/xampp/htdocs/usr/themes/Next/functions.php",
+		"/C/xampp/htdocs/usr/themes/Next/page-archive.php",
+		"/C/xampp/htdocs/usr/themes/Next/archive.php",
+		"/C/xampp/htdocs/usr/themes/Next/page.php",
+		"/C/xampp/htdocs/usr/themes/Next/header.php",
+		"/C/xampp/htdocs/usr/themes/Next/sidebar.php",
+		"/C/xampp/htdocs/usr/themes/Next/page-tags.php",
+		"/C/xampp/htdocs/usr/themes/Next/index.php",
+		"/C/xampp/htdocs/config.inc.php",
+		"/C/Users/surface/Documents/GitHub/typecho-blog/index.html",
+		"/C/xampp/htdocs/usr/plugins/DigestShow/Plugin.php",
+		"/C/Users/surface/OneDrive/Hexo/blog/themes/next/source/images/blog-name.png",
+		"/C/xampp/htdocs/usr/plugins/GoogleCodePrettify/src/prettify.css",
+		"/C/xampp/htdocs/usr/plugins/GoogleCodePrettify/src/prettify_old.css",
+		"/C/xampp/htdocs/usr/themes/Next/dist/css/main.min.css",
+		"/C/xampp/htdocs/usr/themes/Next/src/css/main.css",
+		"/C/xampp/htdocs/usr/themes/drafts/post.php",
+		"/C/xampp/htdocs/usr/themes/Next/LICENSE",
+		"/C/xampp/htdocs/usr/themes/mdl/style.css",
+		"/C/xampp/htdocs/usr/themes/mdl/index.php",
+		"/C/xampp/htdocs/usr/themes/mdl/comments.php",
+		"/C/xampp/htdocs/usr/themes/mdl/footfuns.php",
+		"/C/xampp/htdocs/usr/themes/mdl/post.php",
+		"/C/xampp/htdocs/usr/themes/mdl/footer.php",
+		"/C/xampp/htdocs/usr/themes/mdl/header.php",
+		"/C/xampp/htdocs/usr/themes/drafts/style.css",
+		"/C/xampp/htdocs/usr/themes/mdl/style.min.css",
+		"/C/xampp/htdocs/usr/themes/Mirages/css/theme.css",
+		"/C/Users/surface/OneDrive/项目/WORKDIR/bmh/1636 Pascal山脉.cpp",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/my-G++.sublime-build",
+		"/C/Users/surface/Downloads/localhost.htm",
+		"/C/Users/surface/OneDrive/项目/WORKDIR/1434 [SHOI2002]滑雪",
+		"/C/Users/surface/OneDrive/项目/WORKDIR/1118 [USACO06FEB]数字三角形Backward Digit Su….cpp",
+		"/C/Users/surface/OneDrive/项目/WORKDIR/1538 迎春舞会之数字舞蹈.cpp",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/my-Hexo.sublime-build",
+		"/D/考试/20180317/2/2.cpp",
+		"/C/Users/surface/OneDrive/项目/WORKDIR/noip.sublime-workspace",
+		"/C/Users/surface/OneDrive/项目/WORKDIR/1098 字符串的展开.cpp",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/SyncedSideBar/SyncedSideBar.sublime-settings",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/LocalizedMenu/LocalizedMenu.sublime-settings",
+		"/C/Users/surface/OneDrive/项目/WORKDIR/1.cpp",
+		"/C/Users/surface/OneDrive/项目/WORKDIR/untitled.sublime-build",
+		"/C/Users/surface/Desktop/3369 【模板】普通平衡树.cpp",
+		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 382.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hash"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"hsh"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\surface\\Desktop\\OI"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "洛谷/3376 【模板】网络最大流.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								724,
+								724
+							]
+						],
+						"settings":
+						{
+							"SL.13.region_keys":
+							[
+							],
+							"SL.30.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										725,
+										726
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										724,
+										725
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										725,
+										726
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										724,
+										725
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 371.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 130.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.SublimeLinter":
+	{
+		"height": 122.0
+	},
+	"output.exec":
+	{
+		"height": 201.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 92.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 790.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\surface\\Desktop\\OneDrive\\考试\\20180714\\20180714test.sublime-workspace"
+			]
+		],
+		"width": 760.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
