@@ -14,6 +14,7 @@ int main()
             ++ans;
             if(ans>max) max=ans;
         } 
-    }printf("%d",max);
+    }
+    printf("%d",max);
     return 0;
 }

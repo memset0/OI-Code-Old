@@ -14,9 +14,9 @@ char readc() {
 	return c;
 }
 const int maxn = 257;
-int n, m, u, v, cnt, fir, ans[maxn], deg[maxn], g[maxn][maxn];
+int n, m, cnt, fir, ans[maxn], deg[maxn], g[maxn][maxn];
+char u, v;
 void DFS(int u) {
-	cout << u << endl;
 	for (int i = 1; i < maxn; i++)
 		if (g[u][i]) {
 			g[u][i] = g[i][u] = 1;
@@ -25,15 +25,21 @@ void DFS(int u) {
 	ans[m--] = u;
 }
 int main() {
+	freopen("INPUT", "r", stdin);
 	n = m = read();
 	for (int i = 1; i <= m; i++) {
 		u = readc(), v = readc();
+//		cout << u << " " << v << endl;
 		g[u][v] = g[v][u] = 1;
 		deg[u]++, deg[v]++;
+		cout << u << " " << deg[u] << endl;
 	}
+	for (int i = 1; i < maxn; i++)
+		cout << deg[i] << endl;
 	for (int i = 1; i < maxn; i++)
 		if (deg[i] & 1) {
 			cnt++;
+			cout << i << endl; 
 			if (!fir) fir = i;
 		}
 	if (cnt && cnt != 2) {
@@ -52,11 +58,6 @@ int main() {
 	putchar('\n');
 	return 0;
 }
-
-
-
-
-
 
 
 

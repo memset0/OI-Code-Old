@@ -21,7 +21,7 @@ void link(int u, int v, int w) {
 	g[pos] = {v, w};
 }
 int main() {
-	freopen("INPUT", "r", stdin);
+	freopen("INPUT", "r", stdin)
 	n = read(), m = read(), s = read(), t = read();
 	for (int i = 1; i <= m; i++) {
 		tu = read(), tv = read(), tw = read();

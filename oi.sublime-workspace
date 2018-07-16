@@ -60,11 +60,22 @@
 	"buffers":
 	[
 		{
-			"file": "洛谷/3376 【模板】网络最大流.cpp",
+			"file": "洛谷/1567 统计天数.cpp",
 			"settings":
 			{
-				"buffer_size": 1807,
+				"buffer_size": 329,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "#include <bits/stdc++.h>\n#define ll long long\nusing namespace std;\nll read() {\n\tll x = 0; bool m = 0; char c = getchar();\n\twhile (!isdigit(c) && c != '-') c = getchar();\n\tif (c == '-') c = getchar(), m = 1;\n\twhile (isdigit(c)) x = x * 10 + c - '0', c = getchar();\n\tif (m) return -x; else return x;\n}\nconst int maxn = 1010, Mod = 10000;\nll n, x, y, sum;\ndouble ans;\nstruct Node {\n\tll a, b, times;\n} a[maxn];\nbool cmp(Node a, Node b) {\n\treturn a.times < b.times;\n}\nclass Bignum {\npublic:\n\tint len, a[maxn];\n\tBignum(int x) {\n\t\tlen = 1, a[1] = x;\n\t}\n\tvoid times(int x) {\n\t\tBignum b(0);\n\t\tb.len = len, memset(b.a, 0, sizeof(b.a));\n\t\tfor (int i = 1; i <= len; i++) {\n\t\t\tb.a[i] += a[i] * x;\n\t\t\tb.a[i + 1] += b.a[i] / Mod;\n\t\t\tb.a[i] %= Mod;\n\t\t}\n\t\twhile (b.a[b.len + 1]) {\n\t\t\tb.len++;\n\t\t\tb.a[b.len + 1] += b.a[b.len] / Mod;\n\t\t\tb.a[b.len] %= Mod;\n\t\t}\n\t\tlen = b.len;\n\t\tfor (int i = 1; i <= len; i++)\n\t\t\ta[i] = b.a[i];\n\t}\n\tvoid divition(int x) {\n\t\tBignum b(0);\n\t\tb.len = len, memset(b.a, 0, sizeof(b.a));\n\t\tint left = 0;\n\t\tfor (int i = len; i > 0; i--) {\n\t\t\ta[i] += left * Mod;\n\t\t\tb.a[i] = a[i] / x;\n\t\t\tleft = a[i] % x;\n\t\t}\n\t\twhile (!b.a[b.len])\n\t\t\tb.len--;\n\t\t\n\t}\n\tvoid print() {\n\t\tfor (int i = len; i > 0; i--)\n\t\t\tif (i == len) printf(\"%d\", a[i]);\n\t\t\telse printf(\"%04d\", a[i]);\n\t\tputchar('\\n');\n\t}\n};\nint main() {\n\tn = read(), x = read(), y = read();\n\tfor (int i = 1; i <= n; i++)\n\t\ta[i].a = read(), a[i].b = read(), a[i].times = a[i].a * a[i].b;\n\tsort(a + 1, a + n + 1, cmp);\n\tBignum sum(1);\n\tfor (int i = 1; i <= n; i++) {\n\t\tsum.times(a[i].a);\n\t\tsum.print();\n\t\t// ans = max(ans, sum / (double)a[i].b);\n\t}\n\t// printf(\"%.0lf\\n\", floor(ans));\n\treturn 0;\n}",
+			"file": "洛谷/1080 国王游戏.cpp",
+			"file_size": 1678,
+			"file_write_time": 131761915175569123,
+			"settings":
+			{
+				"buffer_size": 1643,
 				"line_ending": "Windows"
 			}
 		}
@@ -197,6 +208,22 @@
 		"selected_items":
 		[
 			[
+				"ConvertToUTF8",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime ",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"sub",
+				"SublimeLinter: Show All Errors"
+			],
+			[
 				"m",
 				"Material Theme: Extras"
 			],
@@ -209,20 +236,12 @@
 				"SublimeLinter: Goto Error"
 			],
 			[
-				"pci",
-				"Package Control: Install Package"
-			],
-			[
 				"subl",
 				"SublimeLinter: Show All Errors"
 			],
 			[
 				"pcrp",
 				"Package Control: Remove Package"
-			],
-			[
-				"sublime ",
-				"Preferences: SublimeLint Settings – Default"
 			],
 			[
 				"pcremov",
@@ -293,21 +312,26 @@
 	[
 		"/C/Users/surface/Desktop/OI",
 		"/C/Users/surface/Desktop/OI/CodeForces",
-		"/C/Users/surface/Desktop/OI/CodeForces/Codeforces Round #486 (Div. 3)",
 		"/C/Users/surface/Desktop/OI/洛谷"
 	],
 	"file_history":
 	[
+		"/C/Users/surface/Desktop/Sublime Text/Data/Packages/User/G++.sublime-build",
+		"/C/Users/surface/Desktop/Sublime Text/1.cpp",
+		"/C/Users/surface/Desktop/Sublime Text/中文/2.cpp",
+		"/C/Users/surface/Desktop/Sublime Text2/1.cpp",
+		"/C/Users/surface/Desktop/OI/洛谷/1080 国王游戏.cpp",
+		"/C/Users/surface/Desktop/OI/洛谷/3376 【模板】网络最大流.cpp",
+		"/C/Users/surface/Desktop/OI/洛谷/test.cpp",
+		"/C/Users/surface/Desktop/OI/洛谷/test",
 		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/sublimelint/SublimeLint.sublime-settings",
 		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLint.sublime-settings",
 		"/C/Users/surface/Desktop/OI/CodeForces/README.md",
 		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
 		"/C/Users/surface/AppData/Roaming/Sublime Text 3/Packages/User/G++.sublime-build",
-		"/C/Users/surface/Desktop/OI/洛谷/3376 【模板】网络最大流.cpp",
 		"/C/Users/surface/Desktop/OI/private/a+b.cpp",
 		"/C/Users/surface/Desktop/OI/LOJ/7 Input Test.cpp",
 		"/C/Users/surface/Desktop/OI/洛谷/3376 【模板】网络最大流(1).cpp",
-		"/C/Users/surface/Desktop/OI/洛谷/test.cpp",
 		"/C/Users/surface/Desktop/OneDrive/算法/网络流讲稿/SAP_STD.cpp",
 		"/C/Users/surface/Desktop/OI/洛谷/3376 【模板】网络最大流(0).cpp",
 		"/C/Users/surface/Desktop/OI/洛谷/INPUT",
@@ -395,7 +419,7 @@
 	],
 	"find":
 	{
-		"height": 48.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -434,61 +458,40 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "洛谷/3376 【模板】网络最大流.cpp",
+					"file": "洛谷/1567 统计天数.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1807,
+						"buffer_size": 329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								724,
-								724
+								295,
+								295
 							]
 						],
 						"settings":
 						{
-							"SL.13.region_keys":
-							[
-							],
-							"SL.30.region_keys":
-							[
-							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.clone": -1,
 							"bracket_highlighter.clone_locations":
 							{
 								"close":
 								{
-									"1":
-									[
-										725,
-										726
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										724,
-										725
-									]
 								},
 								"unmatched":
 								{
@@ -496,41 +499,26 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -541,16 +529,31 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -558,24 +561,24 @@
 								{
 									"1":
 									[
-										725,
-										726
+										327,
+										328
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										724,
-										725
+										51,
+										52
 									]
 								},
 								"unmatched":
@@ -584,26 +587,41 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -614,6 +632,88 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "洛谷/1080 国王游戏.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								542,
+								542
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										784,
+										785
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										461,
+										462
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -629,22 +729,137 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										544,
+										545
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										520,
+										521
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
+							"is_init_dirty_state": true,
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/C++/C++.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 371.0,
+						"translation.y": 301.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -690,17 +905,17 @@
 	},
 	"output.exec":
 	{
-		"height": 201.0
+		"height": 82.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"pinned_build_system": "Packages/User/G++.sublime-build",
 	"project": "",
 	"replace":
 	{
-		"height": 92.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -742,7 +957,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 281.0,
+	"side_bar_width": 184.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
